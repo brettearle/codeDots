@@ -1,0 +1,167 @@
+//BINDINGS HANDLED BY VS CODE
+
+{
+  "workbench.colorTheme": "Saturated Dark+",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.inlayHints.enabled": "on",
+  "vsicons.dontShowNewVersionMessage": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.iconTheme": "material-icon-theme",
+  "update.showReleaseNotes": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 100,
+  "editor.fontFamily": "Recursive, 'Mono Casual Italic', Sans Linear Casual, 'Recursive Sans Casual', Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "SpaceMono Nerd Font, ProFont llx Nerd Font Mono, DaddyTimeMono Nerd Font, ProFont llx Nerd Font Propo, BigBlueTermPlus Nerd Font, BigBlueTerminalPlus Nerd Font, mononoki, monospace",
+  //TODO EXTENSION
+  "todohighlight.isCaseSensitive": false,
+  "todohighlight.keywords": ["TODO!", "TODO", "FIXME"],
+  "grammarly.files.include": [
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt",
+    "**/*.md"
+  ],
+  "git.confirmSync": false,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "svelte.enable-ts-plugin": true,
+  //POMODORO SETTINGS RELOAD REQUIRED WHEN CHANGED
+  "pomodoro.workTime": 50,
+  "pomodoro.pauseTime": 10,
+  "pomodoro.repeat": 4,
+  //VIM VSCODE
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-a>": false,
+    "<C-e>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    //save
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    //tab right
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    //tab left
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    //Jump group
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    //focus to file in file explorer
+    {
+      "before": ["<leader>", "n", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    //close current tab
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    //search for files in project
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    //find and replace action
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }, 
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "npm.exclude": "",
+  "window.zoomLevel": 2,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "terminal.integrated.fontSize": 12,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
