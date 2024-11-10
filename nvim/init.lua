@@ -716,21 +716,21 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'maxmx03/fluoromachine.nvim',
+    'catppuccin/nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
-      local fm = require 'fluoromachine'
+      local fm = require 'catppuccin'
 
       fm.setup {
         glow = false,
         brightness = 1.0,
-        theme = 'fluoromachine',
-        transparent = true,
+        theme = 'catppuccin',
+        transparent_background = true,
       }
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'fluoromachine'
+      vim.cmd.colorscheme 'catppuccin'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
